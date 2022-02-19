@@ -12,23 +12,70 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
+        <form method="GET" action="results.html"> <!-- TODO: Set Action and Method Properties -->
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
-                <!-- TODO: Create a "lastname" input with type "text" -->
+                <label for="lastname">Your Last Name</label>
+                <input type="text" name="lastname" id="lastname">
             </div>
             <!-- TODO: Make fieldset and legend -->
-            <!-- Todo: Email Input -->
-            <!-- Todo: Street Address Input -->
-            <!-- Todo: City, State, and Zip Inputs -->
-
+            <fieldset>
+                <legend>Your Contact Info</legend>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email">
+                <label for="address">Your Address</label>
+                <input type="text" name="address" id="address">
+                <label for="city">Your City</label>
+                <input type="text" name="city" id="city">
+                <select name="state" id="state">
+                    <option value="NC">North Carolina</option>
+                    <option value="AK">Alaska</option>
+                </select>
+                <label for="zip">Your Zipcode</label>
+                <input type="text" name="zip">
+            </fieldset>
             <!-- TODO: Second fieldset -->
-            <!-- TODO: Radio buttons for selecting preferred destination -->
+            <fieldset>
+                <legend>Your Preferences</legend>
+                <h5>Choose your location</h5>
+                <div>
+                    <label for="aruba">Aruba</label>
+                    <input type="radio" name="location" id="aruba" value="Aruba">
+                </div>
+                <div>
+                    <label for="japan">Japan</label>
+                    <input type="radio" name="location" id="japan" value="japan">
+                </div>
+                <div>
+                    <label for="reykjavik">Reykjavik</label>
+                    <input type="radio" name="location" id="reykjavik" value="reykjavik">
+                </div>
+                <div>
+                    <label for="new zealand">New Zealand</label>
+                    <input type="radio" name="location" id="new zealand" value="new zealand">
+                </div>
+            </fieldset>
             <!-- TODO: Color input for selecting favorite color -->
+            <label for="color">Pick Your Color</label>
+            <input type="color" name="color">
             <!-- TODO: Checkboxes for selecting extra add-ons -->
+           
+            <fieldset>
+                <legend>Extras</legend>
+                <h5>Choose Your Extras</h5>
+                <div>
+                    <label for="yacht">Yacht</label>
+                    <input type="checkbox" name="yacht" id="yacht">
+                </div>
+                <div>
+                    <label for="ferrari">Ferrari</label>
+                    <input type="checkbox" name="ferrari" id="ferrari">
+                </div>
+            </fieldset>
+
+            <input type="submit" name="" id="" value="Enter the Contest">
             
-            <!-- TODO: Submit Button -->
         </form>
     </main>
     <footer>
